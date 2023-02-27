@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>FORMANDO FORMADORES</title>
 </head>
@@ -16,7 +16,7 @@
     <script async defer crossorigin="anónimo" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0"
         nonce="NtF4PjWf"></script>
     <header class="header" id="inicio">
-        <img src="img/bx-menu.svg" alt="menu" class="imgOpen">
+        <img src="./public/img/bx-menu.svg" alt="menu" class="imgOpen">
         <nav class="menu-navegacion">
             <a class="animation" href="#inicio">INICIO</a>
             <a href="#acercaDe">ACERCA DE </a>
@@ -33,7 +33,6 @@
         <section class="contenedor" id="acercaDe">
             <h2 class="subtitulo">ACERCA DE NOSOTROS</h2>
             <div class="contenedor-servicios">
-                <img src="img/Team presentation _Isometric.svg" alt="Designer">
                 <div class="checklist-servicios">
                     <div class="service">
                         <h3 class="n-service"> <span class="number">1</span>CAPACITAMOS</h3>
@@ -51,44 +50,46 @@
                             error, natus sed cum officiis officia veritatis nemo quisquam!</p>
                     </div>
                 </div>
+                <img src="./public/img/Team presentation _Isometric.svg" alt="Designer">
             </div>
         </section>
         <section class="gallery" id="PROYECTOS">
             <div class="contenedor">
                 <h2 class="subtitulo">NUESTROS PROYECTOS</h2>
                 <div class="contenedor-galeria">
-                    <img src="img/img1.jpg" alt="" class="img-galeria">
-                    <img src="img/img2.jpg" alt="" class="img-galeria">
-                    <img src="img/img3.jpg" alt="" class="img-galeria">
-                    <img src="img/img4.jpg" alt="" class="img-galeria">
-                    <img src="img/img5.jpg" alt="" class="img-galeria">
-                    <img src="img/img6.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img1.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img2.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img3.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img4.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img5.jpg" alt="" class="img-galeria">
+                    <img src="./public/img/img6.jpg" alt="" class="img-galeria">
                 </div>
             </div>
         </section>
         <div class="imagen-ligth">
             <img src="" alt="img" class="agregar-imagen">
-            <img src="img/bxs-x-circle.svg" alt="" class="cerrar-imagen">
+            <img src="./public/img/bxs-x-circle.svg" alt="" class="cerrar-imagen">
         </div>
         <section class="contenedor" id="expertos">
             <h2 class="subtitulo">SOMO EXPERTOS EN</h2>
             <section class="experts">
                 <div class="cont-expert">
-                    <img src="img/Educacion.svg" alt="img2">
+                    <img id="poster"  src="./public/img/Educacion.svg" alt="img2">
                     <h3 class="n-expert">EDUCACIÓN</h3>
                 </div>
                 <div class="cont-expert">
-                    <img src="img/Design Thinking.svg" alt="img2">
+                    <img class="poster" src="./public/img/Design Thinking.svg" alt="img2">
                     <h3 class="n-expert">DESIG THINKING</h3>
                 </div>
                 <div class="cont-expert">
-                    <img src="img/aprender.svg" alt="img2">
+                    <img class="poster" src="./public/img/aprender.svg" alt="img2">
                     <h3 class="n-expert">APRENDIZAJE</h3>
                 </div>
             </section>
         </section>
     </main>
-    <section class="comentarios">
+    <section class="subtitulo">
+        <p>Dejanos tus comentarios!</p>
         <div class="fb-comments" data-href="https://zadeqhv.github.io/preuba2/" data-width="" data-numposts="5"></div>
     </section>
     <footer id="Contacto">
@@ -110,10 +111,9 @@
             </div>
         </div>
         <div class="line">
-
         </div>
     </footer>
-    <script src="./java/main.js"></script>
+    <script src="./public/js/main.js"></script>
 </body>
 
 </html>

@@ -56,5 +56,45 @@ contenedorLight.addEventListener('click', (r) => {
     }
 })
 
+const img = document.getElementById('poster')
+const heigth = img.clientheigth
+const widht = img.clientwidht
 
+img.addEventListener('mousemove', (eve) =>{
+    const {Layerx, Layery} =eve
 
+    const Yrotacion = (
+        (Layerx - widht / 2) / widht
+    )*20
+    const Xrotacion = (
+        (Layerx - widht / 2) / widht
+    )*20
+    
+    const string =` 
+    perspective(500px)
+    sacale(1.1)
+    rotacionX${Xrotacion}
+    rotacionY${Yrotacion}
+    `
+    img.style.transform = string
+})
+
+img.addEventListener('mousemove', (eve) =>{
+    img.style.transform =` 
+    perspective(500px)
+    sacale(1)
+    rotacionX(0 )
+    rotacionY(0)
+    `
+})
+
+let previusTitle = document.title
+
+window.addEventListener('blur', () => {
+    previusTitle = document.title
+    document.title= 'NO TE VAYAS AUN 👀'
+})
+
+window.addEventListener('focus', ()=>{
+    document.title = previusTitle 
+})
