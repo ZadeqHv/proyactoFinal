@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "4ea82578-09e2-450b-8da9-8f7d65ca6c5a",
+		"name": "API PRODUCTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26056244"
+	},
+	"item": [
+		{
+			"name": "PRODUCTS",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"laptop hp\",\r\n    \"price\": \"990\",\r\n     \"category\": \"laptos\",\r\n     \"imgURL\":\"PO\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": []
+		},
+		{
+			"name": "AUTH",
+			"item": []
+		}
+	]
+}
